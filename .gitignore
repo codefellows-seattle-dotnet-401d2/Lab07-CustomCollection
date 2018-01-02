@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/Lab07-CustomCollection/v15/.suo
+/Collections/.vs/Collections/v15/.suo
+/Collections/.vs/Collections/v15/Server/sqlite3
