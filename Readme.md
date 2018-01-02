@@ -3,7 +3,7 @@
 **Version**: 1.0.0
 
 ### Overview
-This application . . .
+This application was created to learn collections!  The application holds store products that can be used for an ecommerce store.  This particular store is a cheese store that carries many different types of cheese.  
 
 ### Getting Started
 The following is required to run the program.
@@ -14,6 +14,24 @@ No External NuGet packages are required for this application.
 
 ### Example
 ```
+Welcome to the Cheese Store!
+Here is a list of our products:
+Brie
+Gouda
+Blue
+Swiss
+Cheddar
+Goat
+Feta
+Ricotta
+Parmesan
+Gruyere
+Muenster
+
+Our Cheddar options include:
+Sharp = 0
+Mild = 1
+Hard = 2
 
 ```
 
