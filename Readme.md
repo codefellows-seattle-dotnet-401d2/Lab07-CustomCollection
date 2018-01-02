@@ -41,4 +41,6 @@ Language: C#
 Type of Applicaiton: Console Application 
 
 ### Change Log
-01-01-2001 4:59pm - Added functionality to . . .
+01-02-2018 10:00pm - Added list of cheese products
+01-02-2018 11:00pm - Added enums to types of cheddar
+
