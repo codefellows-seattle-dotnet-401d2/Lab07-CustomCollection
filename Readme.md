@@ -2,7 +2,7 @@
 =====================================
 
 ## To Submit this Assignment
-- fork this repository
+- ~~fork this repository~~
 - create a new branch named `lab01-`; + `<your name>` **e.g.** `lab06-amanda`
 - write your code
 - push to your repository
