@@ -1,0 +1,11 @@
+C:\Users\pedra\Documents\codefellows\401\Lab07-Collections\CustomCollection\CustomCollection\bin\Debug\netcoreapp2.0\CustomCollection.deps.json
+C:\Users\pedra\Documents\codefellows\401\Lab07-Collections\CustomCollection\CustomCollection\bin\Debug\netcoreapp2.0\CustomCollection.runtimeconfig.json
+C:\Users\pedra\Documents\codefellows\401\Lab07-Collections\CustomCollection\CustomCollection\bin\Debug\netcoreapp2.0\CustomCollection.runtimeconfig.dev.json
+C:\Users\pedra\Documents\codefellows\401\Lab07-Collections\CustomCollection\CustomCollection\bin\Debug\netcoreapp2.0\CustomCollection.dll
+C:\Users\pedra\Documents\codefellows\401\Lab07-Collections\CustomCollection\CustomCollection\obj\Debug\netcoreapp2.0\CustomCollection.csprojResolveAssemblyReference.cache
+C:\Users\pedra\Documents\codefellows\401\Lab07-Collections\CustomCollection\CustomCollection\obj\Debug\netcoreapp2.0\CustomCollection.csproj.CoreCompileInputs.cache
+C:\Users\pedra\Documents\codefellows\401\Lab07-Collections\CustomCollection\CustomCollection\obj\Debug\netcoreapp2.0\CustomCollection.AssemblyInfoInputs.cache
+C:\Users\pedra\Documents\codefellows\401\Lab07-Collections\CustomCollection\CustomCollection\obj\Debug\netcoreapp2.0\CustomCollection.AssemblyInfo.cs
+C:\Users\pedra\Documents\codefellows\401\Lab07-Collections\CustomCollection\CustomCollection\bin\Debug\netcoreapp2.0\CustomCollection.pdb
+C:\Users\pedra\Documents\codefellows\401\Lab07-Collections\CustomCollection\CustomCollection\obj\Debug\netcoreapp2.0\CustomCollection.dll
+C:\Users\pedra\Documents\codefellows\401\Lab07-Collections\CustomCollection\CustomCollection\obj\Debug\netcoreapp2.0\CustomCollection.pdb
