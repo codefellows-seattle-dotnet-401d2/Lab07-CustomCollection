@@ -29,6 +29,8 @@ namespace CustomCollection
             BestBuy.Add(XBoxOneX);
             BestBuy.Add(Switch);
 
+            BestBuy.ViewAll();
+
             BestBuy.Remove(SurfacePro4);
             BestBuy.Remove(PS4Pro);
             BestBuy.Remove(Pixel2XL);
