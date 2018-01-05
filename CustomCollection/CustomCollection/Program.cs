@@ -33,8 +33,8 @@ namespace CustomCollection
             bestBuy.Add(XBoxOneX);
             bestBuy.Add(Switch);
 
-            Console.WriteLine("Called GetAtIndex(2)");
-            Console.WriteLine(bestBuy.GetAtIndex(2).Name);
+            Console.WriteLine("Called GetAtIndex(Pixel2XL)");
+            Console.WriteLine("Index of Pixel 2 XL: " + bestBuy.GetAtIndex(Pixel2XL));
 
             Console.WriteLine("Called ViewAll");
             ViewAll(bestBuy.items);

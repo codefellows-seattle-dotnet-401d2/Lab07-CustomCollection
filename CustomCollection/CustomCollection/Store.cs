@@ -18,7 +18,6 @@ namespace CustomCollection
         {
             Console.WriteLine("Collection size before add: " + items.Length);
             Console.WriteLine("Property Count: " + count);
-            // if (count == (items.Length / 2))
             if (count > (int)Math.Ceiling((items.Length * 0.7)))
             {
                 Console.WriteLine("Array > 70% capacity! Increasing array size by 50%!");
@@ -85,13 +84,22 @@ namespace CustomCollection
         }
 
         /// <summary>
-        /// Simply retrieves an item from the collection at a specific index.
+        /// Simply retrieves an item from the collection at a specific index and returns that index location.
         /// </summary>
         /// <param name="index">index to grab object from.</param>
-        /// <returns>The object at index location.</returns>
-        public T GetAtIndex(int index)
+        /// <returns>The index location of the object.</returns>
+        public int GetAtIndex(T item)
         {
-            return items[index];
+            int index = 0;
+            for (int i = 0; i < count; i++)
+            {
+                if (EqualityComparer<T>.Default.Equals(items[i], item))
+                {
+                    index = i;
+                    break;
+                }
+            }
+            return index;
         }
         
         public IEnumerator<T> GetEnumerator()
