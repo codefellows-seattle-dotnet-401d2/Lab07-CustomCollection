@@ -5,11 +5,15 @@ using System.Text;
 
 namespace CustomCollection
 {
-    class Store<T> : IEnumerable<T>
+    public class Store<T> : IEnumerable<T>
     {
-        T[] items = new T[10];
-        int count = 0;
+        public T[] items = new T[10];
+        public int count = 0;
 
+        /// <summary>
+        /// Add an item to the collection. Also determines if collection array is getting full and increases by 50% if it gets more than 70% full.
+        /// </summary>
+        /// <param name="item">Object to add to collection</param>
         public void Add(T item)
         {
             Console.WriteLine("Collection size before add: " + items.Length);
@@ -32,6 +36,10 @@ namespace CustomCollection
             Console.WriteLine("");
         }
 
+        /// <summary>
+        /// Remove an item from the collection. Does this by shifting all items after the passed in object to the left by 1. Also checks beforehand if the collection array is less than 30% capacity, and shrinks by 50% if so.
+        /// </summary>
+        /// <param name="item">Object to remove from collection.</param>
         public void Remove(T item)
         {
             Console.WriteLine("Collection size before remove: " + items.Length);
@@ -58,7 +66,7 @@ namespace CustomCollection
                     }
                     else
                     {
-                        // if not, start at i and move everything over.
+                        // if not, start at i (location of item to remove) and move everything over by 1.
                         Console.WriteLine("Removing item by shifting everything after it over by one!");
                         int temp = i + 1;
                         for (int k = i; k < items.Length - 1; k++)
@@ -76,23 +84,16 @@ namespace CustomCollection
             Console.WriteLine("");
         }
 
-        public void ViewAll()
-        {
-            Console.WriteLine("All items currently in the collection: ");
-            foreach(T item in items)
-            {
-                if(item != null)
-                {
-                    Console.WriteLine(item);
-                }
-            }
-        }
-        /*
+        /// <summary>
+        /// Simply retrieves an item from the collection at a specific index.
+        /// </summary>
+        /// <param name="index">index to grab object from.</param>
+        /// <returns>The object at index location.</returns>
         public T GetAtIndex(int index)
         {
-            return ;
+            return items[index];
         }
-        */
+        
         public IEnumerator<T> GetEnumerator()
         {
             for (int i = 0; i < count; i++)

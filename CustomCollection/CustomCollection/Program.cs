@@ -13,7 +13,9 @@ namespace CustomCollection
             Product Pixel2XL = new Product("Pixel 2 XL", Product.ProductType.SmartPhone);
             Product SurfacePro4 = new Product("Surface Pro 4", Product.ProductType.Tablet);
             Product Area51 = new Product("Area 51", Product.ProductType.Desktop);
-            Store<Product> BestBuy = new Store<Product>
+
+            Console.WriteLine("Instatiating Store with 5 products.");
+            Store<Product> bestBuy = new Store<Product>
             {
                 iPhoneX, SurfaceBook2, Pixel2XL, SurfacePro4, Area51
             };
@@ -23,25 +25,47 @@ namespace CustomCollection
             Product XBoxOne = new Product("XBox One", Product.ProductType.GameConsole);
             Product XBoxOneX = new Product("XBox One X", Product.ProductType.GameConsole);
             Product Switch = new Product("Switch", Product.ProductType.GameConsole);
-            BestBuy.Add(PS4Slim);
-            BestBuy.Add(PS4Pro);
-            BestBuy.Add(XBoxOne);
-            BestBuy.Add(XBoxOneX);
-            BestBuy.Add(Switch);
 
-            BestBuy.ViewAll();
+            Console.WriteLine("Called Add() on 5 products");
+            bestBuy.Add(PS4Slim);
+            bestBuy.Add(PS4Pro);
+            bestBuy.Add(XBoxOne);
+            bestBuy.Add(XBoxOneX);
+            bestBuy.Add(Switch);
 
-            BestBuy.Remove(SurfacePro4);
-            BestBuy.Remove(PS4Pro);
-            BestBuy.Remove(Pixel2XL);
-            BestBuy.Remove(XBoxOne);
-            BestBuy.Remove(iPhoneX);
-            BestBuy.Remove(PS4Slim);
-            BestBuy.Remove(Area51);
-            BestBuy.Remove(XBoxOneX);
-            BestBuy.Remove(SurfaceBook2);
+            Console.WriteLine("Called GetAtIndex(2)");
+            Console.WriteLine(bestBuy.GetAtIndex(2).Name);
+
+            Console.WriteLine("Called ViewAll");
+            ViewAll(bestBuy.items);
+
+            Console.WriteLine("Calling Remove() on 9 items. Switch will be the only one left.");
+            bestBuy.Remove(SurfacePro4);
+            bestBuy.Remove(PS4Pro);
+            bestBuy.Remove(Pixel2XL);
+            bestBuy.Remove(XBoxOne);
+            bestBuy.Remove(iPhoneX);
+            bestBuy.Remove(PS4Slim);
+            bestBuy.Remove(Area51);
+            bestBuy.Remove(XBoxOneX);
+            bestBuy.Remove(SurfaceBook2);
 
             Console.ReadLine();
+        }
+
+        /// <summary>
+        /// Used to print all items in the collection to the screen.
+        /// </summary>
+        /// <param name="items">The collection of items to print</param>
+        public static void ViewAll(Product[] items)
+        {
+            Console.WriteLine("\nAll items currently in the collection: ");
+            for (int i = 0; i < items.Length; i++)
+            {
+                if (items[i] == null) break;
+                Console.WriteLine(items[i].Name);
+            }
+            Console.WriteLine("");
         }
     }
 }
