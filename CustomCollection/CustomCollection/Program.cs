@@ -59,6 +59,12 @@ namespace CustomCollection
         /// <param name="items">The collection of items to print</param>
         public static void ViewAll(Product[] items)
         {
+           /* If I want to implement as a non-static method attached to Store class:
+            * 
+            * PropertyInfo property = typeof(T).GetProperty("Name");
+            * Console.WriteLine(property.GetValue(items[i]));
+           */
+
             Console.WriteLine("\nAll items currently in the collection: ");
             for (int i = 0; i < items.Length; i++)
             {
